@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  padding-bottom: 15px;
+}
+
+mat-card-title {
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 7px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+mat-card {
+  margin-top: 30px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-right: 10px;
+}
+
+.message-validation {
+  background-color: rgb(241, 146, 146, 0.7);
+  color: red;
+  padding: 2px;
+  padding-left: 4px;
+  border-radius: 7px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.button-navigation {
+  background-color: var(--body-text-color);
+  width: 120px;
+}
+
+.validator-form {
+  background-color: var(--secondary-color);
+  color: white;
+  padding-left: 10px;
+}
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

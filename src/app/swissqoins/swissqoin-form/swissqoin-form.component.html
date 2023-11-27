@@ -1,0 +1,54 @@
+<mat-card class="card">
+  <mat-card-title>
+    <div class="titre">
+      Nouvelle entrée SwissQoins
+    </div>
+  </mat-card-title>
+
+<div class="container">
+  <form [formGroup]="swissqoinCreationForm">
+
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="pickerDate" formControlName="date" placeholder="Date - dd.MM.yyyy">
+      <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+      <mat-datepicker #pickerDate></mat-datepicker>
+      <mat-error  class="validator-form" *ngIf="date?.errors">La date de fin est obligatoire</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre de swissqoins</mat-label>
+      <input matInput placeholder="Nombre de swissqoins" formControlName="numOfSwissQ" required>
+      <mat-error  class="validator-form" *ngIf="numOfSwissQ?.errors">Le nombre de swissqoins est obligatoire</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Montant</mat-label>
+      <input matInput placeholder="Montant" formControlName="montant" required>
+      <mat-error class="validator-form" *ngIf="montant?.errors">Le montant est obligatoire</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Rendement %</mat-label>
+      <input matInput placeholder="Rendement  % " formControlName="rendement" required>
+      <mat-error class="validator-form" *ngIf="rendement?.errors">Le rendement est obligatoire</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Bénéfice</mat-label>
+      <input matInput placeholder="Bénéfice" formControlName="benefice" required>
+      <mat-error class="validator-form" *ngIf="benefice?.errors">Le bénéfice est obligatoire</mat-error>
+    </mat-form-field>
+
+    <mat-card>
+      <mat-card-actions align="end">
+        <button class="button-navigation" mat-raised-button  (click)="onClearForm()" style="margin-left:20px">Clear</button>
+        <button class="button-navigation" mat-raised-button  style="margin-left:20px" (click)="onSubmitForm()" >Enregistrer</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </form>
+</div>
+</mat-card>
+
+

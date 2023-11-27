@@ -1,0 +1,48 @@
+/* @import url('~ngx-toastr/toastr');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Roboto&display=swap'); */
+
+:root {
+  --primary-color: #4a4a4a;
+  --secondary-color: #ff7f50;
+  --body-text-color: #707070;
+  --navbar-footer-color: #F9F9F9;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/fond.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: var(--body-text-color);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.body {
+  width: 400px;
+  text-align: center;
+}
+

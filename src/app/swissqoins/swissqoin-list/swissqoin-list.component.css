@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1100px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+}
+.mat-table {
+  width: 100%;
+}
+
+h2 {
+  padding: 12px;
+  color: burlywood;
+}
+
+mat-card-title {
+  background-color: var(--primary-color);
+  padding: 8px;
+  border-radius: 7px;
+  color: white;
+}
+
+i {
+  cursor: pointer;
+}
+
+.row-button {
+  padding: 10px;
+  display: flex;
+  align-self: end;
+}
+
+.button-nouveau {
+  background-color: red;
+}
+
+.row-test {
+  cursor: pointer;
+}
+
+th {
+  font-size: 18px;
+}
+
+td {
+  cursor: pointer;
+}
+
+.button-navigation {
+  background-color: var(--body-text-color);
+}
+
+.header-table-tests {
+  background-color: coral;
+}
+
+td {
+  cursor: pointer;
+}
+
+tr.mat-mdc-row:hover {
+  background-color: rgba(255,127,80,0.1);
+}
+tr.mat-row:hover {
+  background-color: rgba(255,127,80,0.1);
+}
+
