@@ -1,5 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
-import { SwissqoinsService } from './services/swissqoins.service';
+import { Component, OnInit, } from '@angular/core';
 
 @Component({
   selector: 'app-root',
